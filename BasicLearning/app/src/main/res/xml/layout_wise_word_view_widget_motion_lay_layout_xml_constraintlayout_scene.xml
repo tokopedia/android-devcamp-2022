@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500"
+        motion:motionInterpolator="linear">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/customv_wise_word"
+            motion:dragDirection="dragDown"
+            motion:dragScale="1"
+            motion:dragThreshold="5"
+            motion:touchAnchorSide="middle" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/customv_wise_word"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:translationX="0dp"
+            android:translationY="0dp" />
+        <Constraint
+            android:id="@+id/customv_button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                motion:attributeName="buttonColor"
+                motion:customColorValue="@color/teal_200" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/customv_wise_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:translationX="80dp"
+            android:translationY="-330dp"
+            android:layout_marginStart="16dp" />
+        <Constraint
+            android:id="@+id/customv_button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent" >
+            <CustomAttribute
+                motion:attributeName="buttonColor"
+                motion:customColorValue="@color/purple_200" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

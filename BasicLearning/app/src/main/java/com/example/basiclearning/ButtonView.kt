@@ -8,12 +8,10 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
 import android.graphics.Typeface
-import android.graphics.drawable.Drawable
 import android.os.Build
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.ContextCompat
 
 
@@ -94,13 +92,17 @@ class ButtonView: View {
     var onClickListener: () -> Unit = {}
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        if(event.action == MotionEvent.ACTION_UP) {
-            buttonColor = ContextCompat.getColor(context, R.color.teal_200)
-        } else if(event.action == MotionEvent.ACTION_DOWN) {
-            buttonColor = Color.BLUE
-            onClickListener.invoke()
+        return if (isEnabled) {
+            if(event.action == MotionEvent.ACTION_UP) {
+                buttonColor = ContextCompat.getColor(context, R.color.teal_200)
+            } else if(event.action == MotionEvent.ACTION_DOWN) {
+                buttonColor = Color.BLUE
+                onClickListener.invoke()
+            }
+            true
+        } else {
+            super.onTouchEvent(event)
         }
-        return true
     }
 
     override fun onDraw(canvas: Canvas) {

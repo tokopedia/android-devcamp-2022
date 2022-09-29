@@ -39,7 +39,7 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view_common" />-->
-    <com.example.basiclearning.WiseWordChangerWidgetActivityTansView
+    <com.example.basiclearning.WiseWordChangerWidgetMotionLayView
         android:id="@+id/customv_ww_activity_trans"
         android:layout_width="0dp"
         app:cardElevation="8dp"
