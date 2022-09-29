@@ -14,8 +14,9 @@ class WiseWordDifferentView @JvmOverloads constructor(
 ) : CardView(context, attrs, defStyleAttr) {
 
     private var binding: LayoutWiseWordViewLayoutBinding
-    private var tvDescription: TextView
-    private var tvName: TextView
+
+    var tvDescription: TextView
+    var tvName: TextView
 
     init {
         binding = LayoutWiseWordViewLayoutBinding.inflate(LayoutInflater.from(context), this, true)
