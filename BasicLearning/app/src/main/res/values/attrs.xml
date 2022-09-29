@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WiseWordViewCommon">
+        <attr name="textDescription" format="string"/>
+        <attr name="textName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="WiseWordViewDifferent">
+        <attr name="textDescription"/>
+        <attr name="textName"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonView">
+        <attr name="android:text" />
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>

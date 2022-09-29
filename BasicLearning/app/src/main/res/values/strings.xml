@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Basic Learning</string>
+    <string name="wise_word_view_quote_mark">\"</string>
+    <string name="wise_word_view_name">Alexandro</string>
+    <string name="wise_word_view_description">You can\'t control the direction of the wind, but you can adjust your sail.</string>
+    <string name="wise_word_widget_view_button_view">Change</string>
+</resources>
