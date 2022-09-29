@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="WiseWordViewCommon">
+    <declare-styleable name="WiseWordCommonView">
         <attr name="textDescription" format="string"/>
         <attr name="textName" format="string"/>
     </declare-styleable>
 
-    <declare-styleable name="WiseWordViewDifferent">
+    <declare-styleable name="WiseWordDifferentView">
         <attr name="textDescription"/>
         <attr name="textName"/>
     </declare-styleable>

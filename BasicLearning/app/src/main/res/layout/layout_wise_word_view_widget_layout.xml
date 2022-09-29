@@ -11,7 +11,7 @@
         android:background="#454749"
         android:layout_height="250dp">
 
-        <com.example.basiclearning.WiseWordViewDifferent
+        <com.example.basiclearning.WiseWordDifferentView
             android:id="@+id/customv_wise_word"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

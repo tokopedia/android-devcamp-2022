@@ -3,11 +3,9 @@ package com.example.basiclearning
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.TextView
-import androidx.annotation.StyleRes
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
 
-class WiseWordViewCommon: CardView {
+class WiseWordCommonView: CardView {
 
     constructor(context: Context): super(context)
 
@@ -66,13 +64,13 @@ class WiseWordViewCommon: CardView {
     private fun obtainAttributes(context: Context, attrs: AttributeSet, defStyleAttrs: Int) {
         context.obtainStyledAttributes(
             attrs,
-            R.styleable.WiseWordViewCommon,
+            R.styleable.WiseWordCommonView,
             defStyleAttrs,
             R.style.Theme_BasicLearning
         ).apply {
             try {
-                tvDescription.text = getString(R.styleable.WiseWordViewCommon_textDescription)
-                tvName.text = getString(R.styleable.WiseWordViewCommon_textName)
+                tvDescription.text = getString(R.styleable.WiseWordCommonView_textDescription)
+                tvName.text = getString(R.styleable.WiseWordCommonView_textName)
             } finally {
                 recycle()
             }

@@ -5,10 +5,9 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.basiclearning.databinding.LayoutWiseWordViewLayoutBinding
 
-class WiseWordViewDifferent @JvmOverloads constructor(
+class WiseWordDifferentView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
@@ -43,13 +42,13 @@ class WiseWordViewDifferent @JvmOverloads constructor(
     private fun obtainAttributes(context: Context, attrs: AttributeSet, defStyleAttrs: Int) {
         context.obtainStyledAttributes(
             attrs,
-            R.styleable.WiseWordViewDifferent,
+            R.styleable.WiseWordDifferentView,
             defStyleAttrs,
             R.style.Theme_BasicLearning
         ).apply {
             try {
-                tvDescription.text = getString(R.styleable.WiseWordViewDifferent_textDescription)
-                tvName.text = getString(R.styleable.WiseWordViewDifferent_textName)
+                tvDescription.text = getString(R.styleable.WiseWordDifferentView_textDescription)
+                tvName.text = getString(R.styleable.WiseWordDifferentView_textName)
             } finally {
                 recycle()
             }
