@@ -20,13 +20,13 @@ class WiseWordChangerWidgetMotionLayView @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : CardView(context, attrs, defStyleAttr) {
 
-    companion object {
-        const val TRANSLATION_START = -8f
-        const val TRANSLATION_END = 8f
-        const val ALPHA_START = 0f
-        const val ALPHA_END = 1f
-        const val ANIMATION_DURATION = 500L
-    }
+//    companion object {
+//        const val TRANSLATION_START = -8f
+//        const val TRANSLATION_END = 8f
+//        const val ALPHA_START = 0f
+//        const val ALPHA_END = 1f
+//        const val ANIMATION_DURATION = 500L
+//    }
 
     private var binding: LayoutWiseWordViewWidgetMotionLayLayoutBinding
 
