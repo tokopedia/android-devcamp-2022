@@ -10,30 +10,30 @@
         android:background="#454749"
         android:layout_height="250dp">
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView
-            android:id="@+id/customv_wise_word"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView-->
+<!--            android:id="@+id/customv_wise_word"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv2_fromscratch.ButtonView
-            android:id="@+id/customv_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/wise_word_widget_view_button_view"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:textColor="@color/white" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv2_fromscratch.ButtonView-->
+<!--            android:id="@+id/customv_button"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="@string/wise_word_widget_view_button_view"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:textColor="@color/white" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

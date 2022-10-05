@@ -82,27 +82,27 @@ class WiseWordChangerWidgetMotionLayView @JvmOverloads constructor(
     )
 
     var onWiseWordClickListener : (WiseWordChangerWidgetUiModel) -> Unit = {}
-    var tvNameWiseWord: TextView
-    var tvDescriptionWiseWord: TextView
+//    var tvNameWiseWord: TextView
+//    var tvDescriptionWiseWord: TextView
 
     init {
         binding = LayoutWiseWordViewWidgetMotionLayLayoutBinding.inflate(LayoutInflater.from(context), this, true)
 
-        tvNameWiseWord = binding.customvWiseWord.tvName
-        tvDescriptionWiseWord = binding.customvWiseWord.tvDescription
-
-        setWiseWord(listWiseWord.first())
-
-        val alphaAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
-            .setDuration(ANIMATION_DURATION)
-
-        val translationAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
-            .setDuration(ANIMATION_DURATION).apply {
-                repeatCount = ObjectAnimator.INFINITE
-                repeatMode = ObjectAnimator.REVERSE
-            }
+//        tvNameWiseWord = binding.customvWiseWord.tvName
+//        tvDescriptionWiseWord = binding.customvWiseWord.tvDescription
+//
+//        setWiseWord(listWiseWord.first())
+//
+//        val alphaAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
+//            .setDuration(ANIMATION_DURATION)
+//
+//        val translationAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
+//            .setDuration(ANIMATION_DURATION).apply {
+//                repeatCount = ObjectAnimator.INFINITE
+//                repeatMode = ObjectAnimator.REVERSE
+//            }
 
         binding.constraintLayout.setTransitionListener(object : MotionLayout.TransitionListener{
                 override fun onTransitionStarted(
@@ -117,14 +117,14 @@ class WiseWordChangerWidgetMotionLayView @JvmOverloads constructor(
                     endId: Int,
                     progress: Float
                 ) {
-                    if (progress > 0.2f) {
-                        binding.customvButton.isEnabled = false
-                        binding.customvButton.buttonText = "Drag Up"
-                    } else {
-                        binding.customvButton.isEnabled = true
-                        binding.customvButton.buttonText = "Change"
-                    }
-                    translationAnimation.cancel()
+//                    if (progress > 0.2f) {
+//                        binding.customvButton.isEnabled = false
+//                        binding.customvButton.buttonText = "Drag Up"
+//                    } else {
+//                        binding.customvButton.isEnabled = true
+//                        binding.customvButton.buttonText = "Change"
+//                    }
+//                    translationAnimation.cancel()
                 }
 
                 override fun onTransitionCompleted(
@@ -141,9 +141,9 @@ class WiseWordChangerWidgetMotionLayView @JvmOverloads constructor(
             }
         )
 
-        setAlphaAnimationListener(alphaAnimation, translationAnimation)
-        setOnButtonClickListener(alphaAnimation)
-        setOnWiseWordClickListener()
+//        setAlphaAnimationListener(alphaAnimation, translationAnimation)
+//        setOnButtonClickListener(alphaAnimation)
+//        setOnWiseWordClickListener()
     }
 
     private fun setAlphaAnimationListener(alphaAnimation: ObjectAnimator, translationAnimation: ObjectAnimator) {
@@ -158,28 +158,28 @@ class WiseWordChangerWidgetMotionLayView @JvmOverloads constructor(
         })
     }
 
-    private fun setOnButtonClickListener(alphaAnimation: ObjectAnimator) {
-        val random = Random()
-        binding.customvButton.onClickListener = {
-            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
-
-            binding.customvWiseWord.alpha = ALPHA_START
-            alphaAnimation.start()
-            setWiseWord(wise)
-        }
-    }
-
-    private fun setOnWiseWordClickListener() {
-        binding.customvWiseWord.setOnClickListener {
-            onWiseWordClickListener.invoke(WiseWordChangerWidgetUiModel(
-                name = binding.customvWiseWord.textName,
-                description = binding.customvWiseWord.textDescription
-            ))
-        }
-    }
-
-    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
-        binding.customvWiseWord.textName = wiseWord.name
-        binding.customvWiseWord.textDescription = wiseWord.description
-    }
+//    private fun setOnButtonClickListener(alphaAnimation: ObjectAnimator) {
+//        val random = Random()
+//        binding.customvButton.onClickListener = {
+//            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
+//
+//            binding.customvWiseWord.alpha = ALPHA_START
+//            alphaAnimation.start()
+//            setWiseWord(wise)
+//        }
+//    }
+//
+//    private fun setOnWiseWordClickListener() {
+//        binding.customvWiseWord.setOnClickListener {
+//            onWiseWordClickListener.invoke(WiseWordChangerWidgetUiModel(
+//                name = binding.customvWiseWord.textName,
+//                description = binding.customvWiseWord.textDescription
+//            ))
+//        }
+//    }
+//
+//    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
+//        binding.customvWiseWord.textName = wiseWord.name
+//        binding.customvWiseWord.textDescription = wiseWord.description
+//    }
 }

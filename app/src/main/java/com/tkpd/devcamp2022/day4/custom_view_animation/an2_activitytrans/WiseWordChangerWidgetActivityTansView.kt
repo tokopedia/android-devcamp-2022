@@ -81,31 +81,31 @@ class WiseWordChangerWidgetActivityTansView @JvmOverloads constructor(
     )
 
     var onWiseWordClickListener : (WiseWordChangerWidgetUiModel) -> Unit = {}
-    var tvNameWiseWord: TextView
-    var tvDescriptionWiseWord: TextView
+//    var tvNameWiseWord: TextView
+//    var tvDescriptionWiseWord: TextView
 
     init {
         binding = LayoutWiseWordViewWidgetLayoutBinding.inflate(LayoutInflater.from(context), this, true)
 
-        tvNameWiseWord = binding.customvWiseWord.tvName
-        tvDescriptionWiseWord = binding.customvWiseWord.tvDescription
-
-        setWiseWord(listWiseWord.first())
-
-        val alphaAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
-            .setDuration(ANIMATION_DURATION)
-
-        val translationAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
-            .setDuration(ANIMATION_DURATION).apply {
-                repeatCount = ObjectAnimator.INFINITE
-                repeatMode = ObjectAnimator.REVERSE
-            }
-
-        setAlphaAnimationListener(alphaAnimation, translationAnimation)
-        setOnButtonClickListener(alphaAnimation)
-        setOnWiseWordClickListener()
+//        tvNameWiseWord = binding.customvWiseWord.tvName
+//        tvDescriptionWiseWord = binding.customvWiseWord.tvDescription
+//
+//        setWiseWord(listWiseWord.first())
+//
+//        val alphaAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
+//            .setDuration(ANIMATION_DURATION)
+//
+//        val translationAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
+//            .setDuration(ANIMATION_DURATION).apply {
+//                repeatCount = ObjectAnimator.INFINITE
+//                repeatMode = ObjectAnimator.REVERSE
+//            }
+//
+//        setAlphaAnimationListener(alphaAnimation, translationAnimation)
+//        setOnButtonClickListener(alphaAnimation)
+//        setOnWiseWordClickListener()
     }
 
     private fun setAlphaAnimationListener(alphaAnimation: ObjectAnimator, translationAnimation: ObjectAnimator) {
@@ -120,28 +120,28 @@ class WiseWordChangerWidgetActivityTansView @JvmOverloads constructor(
         })
     }
 
-    private fun setOnButtonClickListener(alphaAnimation: ObjectAnimator) {
-        val random = Random()
-        binding.customvButton.onClickListener = {
-            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
-
-            binding.customvWiseWord.alpha = ALPHA_START
-            alphaAnimation.start()
-            setWiseWord(wise)
-        }
-    }
-
-    private fun setOnWiseWordClickListener() {
-        binding.customvWiseWord.setOnClickListener {
-            onWiseWordClickListener.invoke(WiseWordChangerWidgetUiModel(
-                name = binding.customvWiseWord.textName,
-                description = binding.customvWiseWord.textDescription
-            ))
-        }
-    }
-
-    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
-        binding.customvWiseWord.textName = wiseWord.name
-        binding.customvWiseWord.textDescription = wiseWord.description
-    }
+//    private fun setOnButtonClickListener(alphaAnimation: ObjectAnimator) {
+//        val random = Random()
+//        binding.customvButton.onClickListener = {
+//            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
+//
+//            binding.customvWiseWord.alpha = ALPHA_START
+//            alphaAnimation.start()
+//            setWiseWord(wise)
+//        }
+//    }
+//
+//    private fun setOnWiseWordClickListener() {
+//        binding.customvWiseWord.setOnClickListener {
+//            onWiseWordClickListener.invoke(WiseWordChangerWidgetUiModel(
+//                name = binding.customvWiseWord.textName,
+//                description = binding.customvWiseWord.textDescription
+//            ))
+//        }
+//    }
+//
+//    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
+//        binding.customvWiseWord.textName = wiseWord.name
+//        binding.customvWiseWord.textDescription = wiseWord.description
+//    }
 }

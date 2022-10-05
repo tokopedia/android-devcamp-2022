@@ -20,18 +20,18 @@ class AnimationViewActivity : AppCompatActivity() {
         binding = ActivityAnimationViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.customvWireWord.onWiseWordClickListener = {
-            val intent = Intent(this, CustomViewAnimationDetailActivity::class.java)
-            intent.putExtra(EXTRA_NAME, it.name)
-            intent.putExtra(EXTRA_DETAIL, it.description)
-
-            val optionsCompat: ActivityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                this,
-                androidx.core.util.Pair(binding.customvWireWord.tvNameWiseWord, "name"),
-                androidx.core.util.Pair(binding.customvWireWord.tvDescriptionWiseWord, "description")
-            )
-            startActivity(intent, optionsCompat.toBundle())
-//            startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle())
-        }
+//        binding.customvWireWord.onWiseWordClickListener = {
+//            val intent = Intent(this, CustomViewAnimationDetailActivity::class.java)
+//            intent.putExtra(EXTRA_NAME, it.name)
+//            intent.putExtra(EXTRA_DETAIL, it.description)
+//
+//            val optionsCompat: ActivityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
+//                this,
+//                androidx.core.util.Pair(binding.customvWireWord.tvNameWiseWord, "name"),
+//                androidx.core.util.Pair(binding.customvWireWord.tvDescriptionWiseWord, "description")
+//            )
+//            startActivity(intent, optionsCompat.toBundle())
+////            startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle())
+//        }
     }
 }

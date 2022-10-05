@@ -82,21 +82,21 @@ class WiseWordChangerWidgetProAnimView @JvmOverloads constructor(
     init {
         binding = LayoutWiseWordViewWidgetLayoutBinding.inflate(LayoutInflater.from(context), this, true)
 
-        setWiseWord(listWiseWord.first())
-
-        val alphaAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
-            .setDuration(ANIMATION_DURATION)
-
-        val translationAnimation = ObjectAnimator
-            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
-            .setDuration(ANIMATION_DURATION).apply {
-                repeatCount = ObjectAnimator.INFINITE
-                repeatMode = ObjectAnimator.REVERSE
-            }
-
-        setAlphaAnimationListener(alphaAnimation, translationAnimation)
-        setOnClickListener(alphaAnimation)
+//        setWiseWord(listWiseWord.first())
+//
+//        val alphaAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, View.ALPHA, ALPHA_END)
+//            .setDuration(ANIMATION_DURATION)
+//
+//        val translationAnimation = ObjectAnimator
+//            .ofFloat(binding.customvWiseWord, TRANSLATION_X, TRANSLATION_START, TRANSLATION_END)
+//            .setDuration(ANIMATION_DURATION).apply {
+//                repeatCount = ObjectAnimator.INFINITE
+//                repeatMode = ObjectAnimator.REVERSE
+//            }
+//
+//        setAlphaAnimationListener(alphaAnimation, translationAnimation)
+//        setOnClickListener(alphaAnimation)
     }
 
     private fun setAlphaAnimationListener(alphaAnimation: ObjectAnimator, translationAnimation: ObjectAnimator) {
@@ -111,18 +111,18 @@ class WiseWordChangerWidgetProAnimView @JvmOverloads constructor(
         })
     }
 
-    private fun setOnClickListener(alphaAnimation: ObjectAnimator) {
-        val random = Random()
-        binding.customvButton.onClickListener = {
-            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
-            binding.customvWiseWord.alpha = ALPHA_START
-            alphaAnimation.start()
-            setWiseWord(wise)
-        }
-    }
-
-    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
-        binding.customvWiseWord.textName = wiseWord.name
-        binding.customvWiseWord.textDescription = wiseWord.description
-    }
+//    private fun setOnClickListener(alphaAnimation: ObjectAnimator) {
+//        val random = Random()
+//        binding.customvButton.onClickListener = {
+//            val wise = listWiseWord[random.nextInt(listWiseWord.size)]
+//            binding.customvWiseWord.alpha = ALPHA_START
+//            alphaAnimation.start()
+//            setWiseWord(wise)
+//        }
+//    }
+//
+//    private fun setWiseWord(wiseWord: WiseWordChangerWidgetUiModel) {
+//        binding.customvWiseWord.textName = wiseWord.name
+//        binding.customvWiseWord.textDescription = wiseWord.description
+//    }
 }

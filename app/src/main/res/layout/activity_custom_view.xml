@@ -6,56 +6,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".day4.custom_view_animation.CustomViewActivity">
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView
-            android:id="@+id/cv_wise_word_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:textDescription="Hello World"
-            app:textName="Masa iya" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView-->
+<!--            android:id="@+id/cv_wise_word_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:textDescription="Hello World"-->
+<!--            app:textName="Masa iya" />-->
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordCommonView
-            android:id="@+id/cv_wise_word_view_common"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view"
-            app:textDescription="Hello World Sih"
-            app:textName="Masa iya ya" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordCommonView-->
+<!--            android:id="@+id/cv_wise_word_view_common"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view"-->
+<!--            app:textDescription="Hello World Sih"-->
+<!--            app:textName="Masa iya ya" />-->
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv2_fromscratch.ButtonView
-            android:id="@+id/bv_change"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Hello Friend"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view_common"
-            app:textColor="@color/white" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv2_fromscratch.ButtonView-->
+<!--            android:id="@+id/bv_change"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="Hello Friend"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view_common"-->
+<!--            app:textColor="@color/white" />-->
 
-        <com.tkpd.devcamp2022.day4.custom_view_animation.cv3_multipleviews.WiseWordChangerWidgetView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bv_change" />
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv3_multipleviews.WiseWordChangerWidgetView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/bv_change" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
