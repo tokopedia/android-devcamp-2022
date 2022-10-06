@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".day4.custom_view_animation.CustomViewActivity">
 
-<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView-->
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordCommonView-->
 <!--            android:id="@+id/cv_wise_word_view"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
@@ -19,8 +19,8 @@
 <!--            app:textDescription="Hello World"-->
 <!--            app:textName="Masa iya" />-->
 
-<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordCommonView-->
-<!--            android:id="@+id/cv_wise_word_view_common"-->
+<!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv1_basiclearning.WiseWordDifferentView-->
+<!--            android:id="@+id/cv_wise_word_view_different"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:layout_marginStart="16dp"-->
@@ -43,7 +43,7 @@
 <!--            android:text="Hello Friend"-->
 <!--            app:layout_constraintEnd_toEndOf="parent"-->
 <!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view_common"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cv_wise_word_view_different"-->
 <!--            app:textColor="@color/white" />-->
 
 <!--        <com.tkpd.devcamp2022.day4.custom_view_animation.cv3_multipleviews.WiseWordChangerWidgetView-->
